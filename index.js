@@ -27,7 +27,7 @@ Elixir.extend('typescript', function (src,output,options) {
 			.src(paths.src.baseDir)
 			.pipe(Typescript(tsconfig.compilerOptions))
 			.pipe(gulp.dest(paths.output.baseDir));
-	});
+	}).watch(paths.src.path);
 });
 
 /**
