@@ -1,0 +1,26 @@
+{
+  "name": "laravel-elixir-typescript",
+  "version": "0.1.0",
+  "description": "Elixir wrapper for angular 2 typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teddywest32/laravel-elixir-typescript.git"
+  },
+  "keywords": [
+    "laravel",
+    "elixir",
+    "typescript",
+    "gulp"
+  ],
+  "author": "Pralhad Shrestha",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-typescript": "^3.1.2",
+    "laravel-elixir": "^6.0.0-14",
+    "typescript": "^2.0.8"
+  }
+}
