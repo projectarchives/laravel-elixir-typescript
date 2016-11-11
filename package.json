@@ -1,5 +1,5 @@
 {
-  "name": "laravel-elixir-typescript",
+  "name": "laravel-elixir-typescripts",
   "version": "0.1.0",
   "description": "Elixir wrapper for angular 2 typescript",
   "main": "index.js",
