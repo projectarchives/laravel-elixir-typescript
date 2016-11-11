@@ -1,6 +1,6 @@
 var Elixir = require('laravel-elixir');
 var tsconfig = require('./tsconfig.json');
-var Typescript = require('typescript');
+var Typescript = require('gulp-typescript');
 var config = Elixir.config;
 
 /*
@@ -22,10 +22,13 @@ Elixir.config.js.typescript = {
 
 Elixir.extend('typescript', function (src,output,options) {
 	var paths = getPaths(src, output);
+	if (!options) {
+		options = tsconfig.compilerOptions;
+	}
 	new Elixir.Task('typescript', function () {
 		return gulp
 			.src(paths.src.baseDir)
-			.pipe(Typescript(tsconfig.compilerOptions))
+			.pipe(Typescript(options))
 			.pipe(gulp.dest(paths.output.baseDir));
 	}).watch(paths.src.path);
 });
